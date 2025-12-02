@@ -1,0 +1,224 @@
+@import url('https://fonts.googleapis.com/css2?family=Kablammo&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kablammo&family=Rubik+Glitch&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fugaz+One&family=Kablammo&family=Rubik+Glitch&display=swap');
+body {
+    background-image: url(style/PixVerse.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+#h1 {
+    flex-wrap: wrap;
+    text-align: center;
+    font-family: "Dancing Script", cursive;
+    font-size: 5vw;
+    color: rgb(255, 255, 255);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+#jettona {
+    height: 380px;
+    width: 380px;
+}
+
+.container {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.card {
+    border-radius: 20px;
+    overflow: hidden;
+    width: 17vw;
+    height: 35vh;
+    position: relative;
+    cursor: pointer;
+    transform: scale(1);
+    transition: transform 0.5s ease-out, box-shadow 0.3s ease;
+    transform-origin: bottom;
+    margin: 5px;
+    box-shadow: 0 5px 10px;
+}
+
+.card:hover {
+    transform: scale(1.2);
+    box-shadow: 0 15px 20px;
+
+}
+
+
+
+
+.card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transform: scale(1);
+    filter: brightness(1);
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.card:hover img {
+    transform: scale(1.2);
+}
+
+
+
+.card .overlay {
+    position: absolute;
+    top: 0;
+    left: -10px;
+    width: 300px;
+    height: 4000px;
+    background-color: black;
+    transition: opacity 0.3s ease, transform 0.5s ease-out;
+    opacity: 0.9;
+    z-index: 1;
+
+}
+.card:hover .overlay {
+    opacity: 0.6;
+    transform: scale(1.4);
+}
+.card .agente {
+    position: absolute;
+    width: 7vw;
+    transform: translateY(100%);
+    opacity: 0;
+    transition: transform 0.5s ease-out, opacity 0.5s ease-in-out;
+}
+
+.card:hover .agente {
+    transform: translateY(0%);
+    opacity: 1;
+}
+
+.card #clove2 {
+    width: 70%;
+    height: auto;
+    position: absolute;
+    z-index: 2;
+    left: -10%;
+    bottom: -6vw;
+}
+
+.card #jett2 {
+    width: 65%;
+    height: auto;
+    position: absolute;
+    z-index: 2;
+    left: -10%;
+    bottom: -4vw;
+}
+
+.card #skye2 {
+    width: 65%;
+    height: auto;
+    position: absolute;
+    z-index: 2;
+    left: 0%;
+    bottom: -4vw;;
+}
+
+.card #sage2 {
+    width: 50%;
+    height: auto;
+    position: absolute;
+    z-index: 2;
+    left: 0%;
+    bottom: -4vw;
+}
+
+
+.Nomes {
+    height: auto;
+    position: absolute;
+    font-size: 100px;
+    z-index: 1;
+    opacity: 0;
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.card:hover .Nomes {
+    opacity: 1;
+}
+
+#clove {
+    position: absolute;
+    transform: translateX(14vw);
+    color: rgb(151, 28, 110);
+    font-size: 2.7vw;
+    writing-mode: vertical-lr;
+    text-orientation: upright;
+    letter-spacing: -8px;
+    bottom: 10px;
+    transition: transform 0.5s ease;
+    font-family: "Kablammo", system-ui;
+    -webkit-text-stroke: 0.1px rgb(145, 145, 145);
+    text-shadow: 0 3px black;
+
+}
+.card:hover #clove{
+    transform:translateX(10vw) ;
+
+}
+#Jett{
+    position: absolute;
+    transform: translateX(14vw);
+    color: rgb(6, 143, 153);
+    font-size: 3.5vw;
+    writing-mode: vertical-lr;
+    text-orientation: upright;
+    letter-spacing: -11px;
+    bottom: 11px;
+    transition: transform 0.5s ease-in-out;
+    font-family:"Kablammo", system-ui;
+    -webkit-text-stroke: 0.6px rgb(0, 0, 0);
+    text-shadow: 0 3px black;
+}
+.card:hover #Jett{
+    transform:translateX(8vw) ;
+}
+
+#skye{
+    position: absolute;
+    transform: translateX(14vw);
+    color: rgb(3, 104, 0);
+    font-size: 3vw;
+    writing-mode: vertical-lr;
+    text-orientation: upright;
+    letter-spacing: -6px;
+    bottom: 11px;
+    transition: transform 0.5s ease-in-out;
+    font-family:"Kablammo", system-ui;
+    -webkit-text-stroke: 0.6px rgb(1, 54, 8);
+    text-shadow: 0 3px black;
+    z-index: 4;
+}
+.card:hover #skye{
+    transform:translateX(9vw) ;
+}
+#Sage{
+    transform: translateX(14vw);
+    color: rgb(37, 122, 122);
+    font-size: 3vw;
+    writing-mode: vertical-lr;
+    text-orientation: upright;
+    letter-spacing: -6px;
+    bottom: 11px;
+    transition: transform 0.5s ease-in-out;
+    font-family:"Kablammo", system-ui;
+    -webkit-text-stroke: 0.6px rgb(1, 54, 8);
+    text-shadow: 0 3px black;
+    z-index: 4;
+}
+.card:hover #Sage{
+    transform:translateX(9vw) ;
+}

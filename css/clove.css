@@ -1,0 +1,231 @@
+@import url('https://fonts.googleapis.com/css2?family=Agu+Display&family=Festive&family=Fugaz+One&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Kablammo&family=Rubik+Glitch&family=Trade+Winds&display=swap');
+
+body {
+    background-image: url(imagens/1356855.png);
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    box-sizing: border-box;
+    overflow: hidden;
+    margin: 0;
+
+}
+
+#box {
+    display: flex;
+    z-index: 2;
+    position: relative;
+    height: 3vw;
+    width: 3vw;
+    background-color: blueviolet;
+    cursor: pointer;
+    transform: scale(1);
+    transition: transform 0.3s ease, width 0.3s ease;
+    margin: 5px;
+    border-radius: 20px;
+    overflow: hidden;
+    top: auto;
+    border-color: aliceblue;
+    border: 1px solid rgb(0, 0, 0);
+}
+
+#box:hover {
+    transform: scale(1.1);
+    width: 10vw;
+}
+
+#casa img {
+    position: absolute;
+    width: 3vw;
+    height: auto;
+    top: 1px;
+    filter: brightness(0);
+    
+}
+
+#box p {
+    position: absolute;
+    left: 3.2vw;
+    top: -90%;
+    font-size: 2.3vw;
+    color: rgb(0, 0, 0);
+    font-family: "Agu Display", serif;
+    text-decoration: none;
+}
+
+#clove {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    position: relative;
+}
+
+#clove p {
+    flex-grow: 1;
+}
+
+
+.container {
+    position: relative;
+    display: flex;
+    left: 29vw;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 1vw;
+}
+
+.habilidades {
+    transform-origin: center;
+    border-radius: 10vw;
+    width: 7vw;
+    height: 14vh;
+    position: relative;
+    cursor: pointer;
+    transform: scale(1);
+    transition: transform 0.5s ease-out, box-shadow 0.3s ease;
+    transform-origin: bottom;
+    margin: 5px;
+    box-shadow: 0 0px 20px rgb(0, 0, 0.5);
+
+}
+
+.habilidades:hover {
+    transform: scale(1.2);
+    box-shadow: 0 5px 20px;
+}
+
+.habilidades img {
+    background-color: rgb(138, 43, 226);
+    width: 7vw;
+    height: 14vh;
+    transform: scale(1);
+    filter: brightness(1);
+    transition: transform 0.3s ease, filter 0.3s ease;
+    border-radius: 20px;
+}
+.Nomes {
+    left: 3.1vw;
+    color: rgb(67, 0, 70);
+    position: absolute;
+    font-size: 1vw;
+    transform: translateY(-1vw);
+    opacity: 0;
+    transition: opacity 0.5s ease-out, transform 0.5s ease;
+    
+}
+.habilidades:hover .Nomes{
+    opacity: 1;
+    transform: translateY(-2.5vw);
+}
+
+
+h1 {
+    text-decoration: none;
+    text-align: center;
+    margin-top: -90px;
+    font-size: 100px;
+    color: rgb(255, 255, 255);
+    font-family: "Agu Display", serif;
+    letter-spacing: 30px;
+    flex-wrap: wrap;
+}
+
+#clove #box2 {
+    top: -200px;
+    width: 23vw;
+    height: 150vh;
+    position: absolute;
+    display: flex;
+    background-color: rgb(156, 0, 177);
+    z-index: 1;
+    left: -10px;
+    flex-direction: column;
+    gap: 2px;
+    overflow: hidden;
+    border-color: blueviolet;
+    border: 3px solid rgb(255, 255, 255);
+    box-shadow: 0 0px 10px black;
+    overflow: hidden;
+    top:-11vh; 
+}
+.nome{
+    color: rgb(209, 115, 197);
+    font-family: "Agu Display", serif;
+    font-size: 8vw;
+    letter-spacing: 0.7vw;
+    width: 80px;
+    height: 0;
+    line-height: 15vh;
+    margin: 3px 0;
+    opacity: 0.3;
+    -webkit-text-stroke: 1px rgb(255, 0, 0);
+    
+
+
+}
+#clove .box3{
+    position: absolute;
+    width: 300px;
+    height: 100vh;
+    background-color: rgb(255, 0, 234);
+    align-items: center;
+}
+#cemiterio{
+    position: absolute;
+    width: 24vw;
+    left: -20px;
+    z-index: 3;
+    top: 42vh;
+    height: 55vh;
+}
+#corpo {
+    position: absolute;
+    width: 23vw;
+    left: -20px;
+    top: 10vh;  
+    z-index: 2;
+    height: 90vh; 
+}
+#textar{
+    color: aliceblue;
+    font-size: 1.6vw;
+    position: relative;
+    margin: 3vh;
+    gap: -10px;
+    flex-direction: column;
+    display: flex;
+    text-align: center;
+    max-width: 44vw;
+    font-family:"Josefin Sans", sans-serif ;
+    left: 23vw;
+    line-height: 3.5vh;
+    background: blueviolet;/*cor fundo */
+    border-radius: 10px;
+}
+#textar p{
+    z-index: 3;
+}
+#Mini-game{
+    left: 72vw;
+    position: relative;
+    margin-top: -65vh;
+}
+#mapa{
+    z-index: 1;
+    position: absolute;
+    background-color: rgb(0, 0, 0);
+    border-radius: 10px;
+
+}
+#box2 img{
+    position: absolute;
+    width: 35vw;
+    left: -7vw;
+    top:-20vh;  
+    z-index: 3;
+    height: 140vh; 
+    filter: brightness(1.1);
+    opacity: 0.5;
+
+}

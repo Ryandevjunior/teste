@@ -1,0 +1,202 @@
+@import url('https://fonts.googleapis.com/css2?family=Agu+Display&family=Festive&family=Fugaz+One&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Kablammo&family=Rubik+Glitch&family=Trade+Winds&display=swap');
+
+body {
+    background-image: url(skyeimg/1149766.png);
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    box-sizing: border-box;
+    overflow: hidden;
+    margin: 0;
+
+}
+
+#box {
+    display: flex;
+    z-index: 6;
+    position: relative;
+    height: 2.8vw;
+    width: 2.8vw;
+    background-color: rgb(15, 75, 0);
+    cursor: pointer;
+    transform: scale(1);
+    transition: transform 0.3s ease, width 0.3s ease;
+    margin: 5px;
+    border-radius: 20px;
+    overflow: hidden;
+    top: 1vh;
+    border-color: aliceblue;
+    border: 1px solid rgb(0, 0, 0);
+}
+
+#box:hover {
+    transform: scale(1.1);
+    width: 10vw;
+}
+
+#casa img {
+    position: absolute;
+    width: 2.8vw;
+    height: auto;
+    top: 1px;
+    filter: brightness(0);
+    
+}
+
+#box p {
+    position: absolute;
+    left: 3.2vw;
+    top: -95%;
+    font-size: 2.3vw;
+    color: rgb(0, 0, 0);
+    font-family: "Agu Display", serif;
+    text-decoration: none;
+}
+.container {
+    position: relative;
+    display: flex;
+    left: 29vw;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.5vw;
+}
+
+.habilidades {
+    transform-origin: center;
+    border-radius: 10vw;
+    width: 7vw;
+    height: 14vh;
+    position: relative;
+    cursor: pointer;
+    transform: scale(1);
+    transition: transform 0.5s ease-out, box-shadow 0.3s ease;
+    transform-origin: bottom;
+    margin: 5px;
+    box-shadow: 0 0px 20px rgb(0, 0, 0.5);
+
+}
+
+.habilidades:hover {
+    transform: scale(1.2);
+    box-shadow: 0 5px 20px;
+}
+
+.habilidades img {
+    background-color: rgb(21, 104, 0);
+    width: 7vw;
+    height: 14vh;
+    transform: scale(1);
+    filter: brightness(1);
+    transition: transform 0.3s ease, filter 0.3s ease;
+    border-radius: 20px;
+}
+.Nomes {
+    left: 2.96vw;
+    color: rgb(0, 0, 0);
+    position: absolute;
+    font-size: 1.5vw;
+    transform: translateY(-1vw);
+    opacity: 0;
+    transition: opacity 0.5s ease-out, transform 0.5s ease;
+    
+}
+.habilidades:hover .Nomes{
+    opacity: 1;
+    transform: translateY(-3.5vw);
+}
+#Skye #box2 {
+    top: -200px;
+    width: 23vw;
+    height: 150vh;
+    position: absolute;
+    display: flex;
+    background-color: rgb(21, 104, 0);
+    z-index: 1;
+    left: -10px;
+    flex-direction: column;
+    gap: 2px;
+    overflow: hidden;
+    border-color: rgb(60, 255, 0);
+    border: 3px solid rgb(255, 255, 255);
+    box-shadow: 0 0px 10px black;
+    overflow: hidden;
+    top:-1vh; 
+}
+.nome{
+    color: rgb(0, 0, 0);
+    font-family:  "Rubik Glitch", system-ui;
+    font-size:8vw;
+    letter-spacing: 1.0vw;
+    width: 80px;
+    line-height: 12vh;
+    margin: 3px 0;
+    opacity: 0.5;
+    -webkit-text-stroke: 1px rgb(24, 0, 70);
+    z-index: 2;
+
+}
+#box2 img{
+    position: absolute;
+    width: 50vw;
+    left: -14vw;
+    top:-20vh;  
+    z-index: 3;
+    height: 140vh; 
+    filter: brightness(1.1);
+    opacity: 0.5;
+
+}
+
+#corpo {
+    position: absolute;
+    width: 23vw;
+    left: 2vw;
+    top:18vh;  
+    z-index: 3;
+    height: 90vh; 
+    filter: brightness(1.1);
+}
+#z12{
+    position: absolute;
+    width: 60vw;
+    left: -32vw;
+    top: -9vh;  
+    z-index: 2;
+    height: 120vh; 
+
+}
+#z13{
+    position: absolute;
+    width: 23vw;
+    left: 5vw;
+    top: 17vh;  
+    z-index: 2;
+    height: 90vh; 
+    filter: saturate(0.7)opacity(0.64)blur(1px)
+}
+#textar{
+    color: rgb(255, 255, 255);
+    font-size: 1.3vw;
+    position: relative;
+    margin: 3vh;
+    gap: -10px;
+    flex-direction: column;
+    display: flex;
+    text-align: center;
+    max-width: 44vw;
+    font-family:"Josefin Sans", sans-serif ;
+    left: 23vw;
+    line-height: 3.5vh;
+    background: rgb(10, 65, 13);/*cor fundo */
+    border-radius: 10px;
+    
+}
+#textar p{
+    z-index: 3;
+}
+#Mini-game{
+    left: 72vw;
+    position: relative;
+    margin-top: -65vh;
+}
